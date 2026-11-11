@@ -1,0 +1,94 @@
+/* Import Font */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+/* Identitas Warna Selaras Coffee */
+:root {
+  --primary-brown: #4e342e;
+  --secondary-brown: #795548;
+  --accent-color: #d7ccc8;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background-color: var(--primary-brown) !important;
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff !important;
+  transition: 0.3s ease;
+}
+.custom-navbar .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Alert Styling */
+.custom-alert {
+  background-color: var(--accent-color);
+  color: var(--primary-brown);
+  border: 1px solid var(--secondary-brown);
+}
+
+/* Hero Section */
+.hero-section {
+  height: 70vh;
+  background:
+    linear-gradient(rgba(78, 52, 46, 0.7), rgba(78, 52, 46, 0.8)),
+    center/cover no-repeat;
+  margin-top: 56px;
+}
+
+/* Button Custom */
+.btn-custom {
+  background-color: var(--secondary-brown);
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+.btn-custom:hover {
+  background-color: var(--primary-brown);
+  color: white;
+}
+.btn-outline-custom {
+  color: var(--primary-brown);
+  border: 1px solid var(--primary-brown);
+  transition: 0.3s;
+}
+.btn-outline-custom:hover {
+  background-color: var(--primary-brown);
+  color: white;
+}
+
+/* Card Styling */
+.product-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Branding Text */
+.brand-text {
+  color: var(--primary-brown);
+}
+
+/* Footer & Modal Header */
+.custom-footer,
+.custom-modal-header {
+  background-color: var(--primary-brown);
+}

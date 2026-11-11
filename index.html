@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selaras Coffee | Harmoni dalam Setiap Seduhan</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Responsif -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Selaras Coffee</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Alert Notifikasi Promo (Tampil di bawah navbar) -->
+    <div class="container mt-5 pt-4">
+      <div
+        class="alert custom-alert alert-dismissible fade show mt-4"
+        role="alert"
+      >
+        <strong>Promo Spesial!</strong> Diskon 20% untuk semua varian kopi edisi
+        akhir pekan.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+
+    <!--Hero Section -->
+    <section
+      id="beranda"
+      class="hero-section d-flex align-items-center text-center"
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold text-white mb-3">
+          Temukan Keselarasan Rasa
+        </h1>
+        <p class="lead text-white mb-4">
+          Kopi pilihan terbaik dari petani lokal, diseduh dengan sepenuh hati
+          untuk menemanimu setiap hari.
+        </p>
+        <a href="#produk" class="btn btn-custom btn-lg">Lihat Menu Kami</a>
+      </div>
+    </section>
+
+    <!-- Cards Section (Produk) -->
+    <section id="produk" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 brand-text">Menu Andalan Kami</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 product-card border-0 shadow-sm">
+              <img src="images/coffe.jpg" class="card-img-top" alt="Espresso" />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Selaras Espresso</h5>
+                <p class="card-text text-muted">
+                  Kopi hitam pekat dengan ekstraksi sempurna dari biji Arabika
+                  pilihan.
+                </p>
+                <!-- Tombol ini memicu Modal -->
+                <button
+                  class="btn btn-outline-custom w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                >
+                  Pesan - Rp 18.000
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 product-card border-0 shadow-sm">
+              <img
+                src="images/coffe-tools.jpg"
+                class="card-img-top"
+                alt="Kopi Susu"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Kopi Susu Gula Aren</h5>
+                <p class="card-text text-muted">
+                  Perpaduan harmonis espresso, susu segar, dan manisnya gula
+                  aren asli.
+                </p>
+                <button
+                  class="btn btn-outline-custom w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                >
+                  Pesan - Rp 22.000
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 product-card border-0 shadow-sm">
+              <img
+                src="images/coffe-place.jpg"
+                class="card-img-top"
+                alt="Matcha"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Matcha Latte</h5>
+                <p class="card-text text-muted">
+                  Bagi kamu yang ingin rehat dari kopi. Creamy dan menenangkan.
+                </p>
+                <button
+                  class="btn btn-outline-custom w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                >
+                  Pesan - Rp 25.000
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Kontak -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card border-0 shadow-sm p-4 form-card">
+              <h3 class="text-center fw-bold mb-4 brand-text">Hubungi Kami</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama"
+                    placeholder="Masukkan nama Anda"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email / WhatsApp</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email atau nomor WA aktif"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label"
+                    >Pesan / Pertanyaan</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    rows="4"
+                    placeholder="Tulis pesan Anda di sini"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer text-white text-center py-4">
+      <div class="container">
+        <h5 class="fw-bold mb-2">Selaras Coffee</h5>
+        <p class="mb-0 text-white-50">
+          Jl. Srengseng Sawah, Jakarta Selatan. Buka: 08.00 - 22.00
+        </p>
+        <hr class="border-light opacity-50 my-3" />
+        <small>© 2026 Selaras Coffee. All Rights Reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Modal Pemesanan -->
+    <div
+      class="modal fade"
+      id="orderModal"
+      tabindex="-1"
+      aria-labelledby="orderModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header custom-modal-header">
+            <h5 class="modal-title fw-bold text-white" id="orderModalLabel">
+              Konfirmasi Pesanan
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Pemesanan saat ini sedang dialihkan melalui sistem WhatsApp
+              Business kami agar pesanan lebih cepat diproses.
+            </p>
+            <p class="mb-0">Apakah Anda ingin melanjutkan chat ke WhatsApp?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn btn-custom">
+              Lanjut ke WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
