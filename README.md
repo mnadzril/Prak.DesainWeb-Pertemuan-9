@@ -46,11 +46,14 @@ Selama proses perancangan, kendala yang dihadapi adalah komponen bawaan Bootstra
 ```text
 tugas-laprak/
 ├── index.html       # File HTML utama (struktur & komponen Bootstrap)
-├── README.md        # Dokumentasi ringkasan dan panduan tugas
 ├── style.css        # Custom CSS eksternal (warna, hero, efek hover)
-└── images/          # Folder untuk menyimpan screenshot (opsional)
-    ├── screenshot-desktop.png
-    └── screenshot-mobile.png
+├── screenshot       # screenshot running program desktop dan mobile
+    ├── screenshot desktop.jpg 
+    └── screenshot mobile.jpg     
+└── images/          # Folder untuk menyimpan foto asset website
+    ├── coffe.jpg
+    ├── coffe-place.jpg
+    └── coffe-tools.jpg
 ```
 
 ---
