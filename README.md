@@ -63,8 +63,3 @@ tugas-selaras-coffee/
 *   **Custom CSS3:** Pengaturan palet warna, tipografi, dan transisi visual.
 
 ---
-
-## 🔗 Informasi Mahasiswa
-
-*   **Nama:** [Masukkan Nama Anda Di Sini]
-*   **NPM:** [Masukkan NPM Anda Di Sini]
