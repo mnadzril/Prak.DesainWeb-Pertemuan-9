@@ -44,7 +44,7 @@ Selama proses perancangan, kendala yang dihadapi adalah komponen bawaan Bootstra
 ## Struktur Folder Project
 
 ```text
-tugas-selaras-coffee/
+tugas-laprak/
 ├── index.html       # File HTML utama (struktur & komponen Bootstrap)
 ├── README.md        # Dokumentasi ringkasan dan panduan tugas
 ├── style.css        # Custom CSS eksternal (warna, hero, efek hover)
