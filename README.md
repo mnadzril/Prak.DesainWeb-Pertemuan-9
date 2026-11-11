@@ -11,7 +11,6 @@ Website UMKM *Selaras Coffee* dirancang dalam bentuk *One Page Website* mengguna
 
 Selama proses perancangan, kendala yang dihadapi adalah komponen bawaan Bootstrap (seperti Card dan Navbar) yang seringkali terlihat kaku dan sama dengan *website template* pada umumnya. Selain itu, penyesuaian jarak antar elemen (*spacing*) pada *viewport* mobile sempat membuat form kontak dan hero section terasa terlalu padat.
 
-Solusi yang diterapkan adalah menambahkan *Custom CSS* dengan *hover effect* (transformasi `translateY`) dan *shadow* spesifik pada kartu produk agar lebih interaktif. Untuk mengatasi masalah *layout* di tampilan mobile, sistem *grid column* (`col-md`) dan *utility classes* Bootstrap seperti `gap`, `padding`, dan `margin` (misalnya `p-4`, `g-4`) dimaksimalkan sehingga elemen tersusun rapi. Interaktivitas Modal dan Alert juga diimplementasikan langsung menggunakan atribut `data-bs` bawaan Bootstrap. Hasil akhir menghasilkan antarmuka yang bersih, fungsional, dan responsif.
 
 ---
 
